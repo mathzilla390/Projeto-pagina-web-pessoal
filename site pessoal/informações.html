@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>informações</title>
+
+    <style>
+        *{
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer{
+            background-color: #1a1a1a; 
+            padding: 20px; 
+            text-align: center;
+        }
+
+        main {
+            flex: 1; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1{
+            color: #00ffcc;
+            text-align: center;
+        }
+
+        a {
+            color: #03ffc8;
+            text-decoration: none; 
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: rgb(251, 255, 0);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #00ffcc;
+            color: black;
+            border-radius: 50px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #242424;
+            color: cyan;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            padding: 25px; 
+            border-radius: 15px;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        ul {
+            list-style: none; 
+            margin-top: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #00ffcc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mais informações sobre mim</h1>
+        <a href="home.html" class="btn">HOME</a>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="card">
+                <ul>
+                    <li><strong>Idade:</strong> 18 anos</li>
+                    <li><strong>Cidade:</strong> Santana de Parnaíba</li>
+                    <li><strong>Faculdade:</strong> 
+                        <a href="https://inscricoes.unip.br/" target="_blank">UNIP</a>
+                    </li>
+                    <li><strong>Área de interesse:</strong> Desenvolvimento Web</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Meu portfólio</p>
+        <a href="contato.html">Contato</a> | 
+        <a href="https://github.com/mathzilla390" target="_blank">GitHub</a>
+    </footer>
+
+</body>
+</html>
